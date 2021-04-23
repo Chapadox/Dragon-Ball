@@ -4,7 +4,7 @@
   "description": "node js project",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon index.js"
+    "dev": "nodemon index.js"
   },
   "author": "Eduardo Santos",
   "license": "MIT",
