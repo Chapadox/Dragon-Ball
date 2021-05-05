@@ -9,6 +9,7 @@ body{
   flex-direction: column;
 }
 
+/* Class */
 .main{
   background-color:#2c2f33;
   border-radius: 15px ;
@@ -25,28 +26,6 @@ body{
   height: 5rem;
 }
 
-.productName{
-  font-size: 50px;
-  text-align: justify;
-  margin-left: 40px;
-}
-
-.productPrice {
-  font-size: 25px;
-position: absolute;
-  margin-top: 43px;
-  margin-left: 34rem;
-
-}
-.productPrice2 {
-  font-size: 25px;
-  position: absolute;
-  margin-top: 43px;
-  margin-left: 39rem;
-
-}
-
-
 .sections{
   background-color: gray;
   border-radius: 15px ;
@@ -61,10 +40,34 @@ position: absolute;
 .values {
   margin-top: 0.9rem;
   font-size: 20px;
-  
+}
+/* End Class */
+
+
+/* Ids */
+#productPrice {
+  font-size: 25px;
+position: absolute;
+  margin-top: 43px;
+  margin-left: 34rem;
+
 }
 
-#pago{
+#productPrice2 {
+  font-size: 25px;
+  position: absolute;
+  margin-top: 43px;
+  margin-left: 39rem;
+
+}
+
+#troco {
+  margin-top: 0.9rem;
+  font-size: 26px;
+  line-height: 20px;
+}
+
+#pago {
   position: relative;
   text-align: center;
   margin-top: 30px;
@@ -77,15 +80,41 @@ position: absolute;
 }
 
 
-#produto{
-  position: relative;
-  text-align: center;
-  margin-top: 10px;
-  margin-left: 50px;
+#pesquisar {
+  font-size: 16px;
   background-color: gray;
+  border-radius: 5px ;
   width: 20rem;
   height: 40px;
-  border-radius: 5px;
+  border: none;
+  text-align: center;
+}
+
+#form {
+  position: relative;
+  top: 50%;
+  left: 27%;
+}
+
+#productName {
+  font-size: 50px;
+  text-align: justify;
+  margin-left: 40px;
+}
+
+#botao {
+  font-size: 16px;
+  border-radius: 5px ;
+  width: 5.5rem;
+  height: 30px;
+  text-align: center;
+}
+
+/* End Ids */
+
+
+textarea:focus, input:focus, select:focus {
+  outline: 0;
 }
 
 ::-webkit-input-placeholder {

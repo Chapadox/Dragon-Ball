@@ -31,7 +31,7 @@ const Api = app => {
 
       prodcts.push(bdy)
       postProducts(prodcts)
-      res.send('adcionado')
+      res.send('Produto adicionado')
     })
 }
 
