@@ -1,9 +1,9 @@
 const fs = require('fs')
 const path = require('path')
 
-const db = path.join(__dirname, '../db/produtos.json')
+const db = path.join(__dirname, '../db/db.json')
 
-function getProdutos() {
+function getPokemons() {
   const data = fs.readFileSync(db)
 
   try {
@@ -13,7 +13,7 @@ function getProdutos() {
   }
 }
 
-function postProducts(prodcts) {
+function postPokemon(prodcts) {
   fs.writeFileSync(db, JSON.stringify(prodcts, null, '\t'))
 }
 
@@ -22,16 +22,16 @@ function postProducts(prodcts) {
 const Api = app => {
   app.route('/')
     .get((req, res) => {
-      res.send(getProdutos())
+      res.send(getPokemons())
     })
 
     .post((req, res) => {
-      const prodcts = getProdutos()
+      const prodcts = getPokemons()
       const bdy = req.body
 
       prodcts.push(bdy)
-      postProducts(prodcts)
-      res.send('Produto adicionado')
+      postPokemon(prodcts)
+      res.send('Pokémon adicionado')
     })
 }
 

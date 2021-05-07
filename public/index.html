@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Fonts -->
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
-    <!-- Fonts -->
+  <!-- Fonts -->
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto&display=swap" rel="stylesheet">
+  <!-- Fonts -->
 
-    <title>Caixa</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
 
-  </head>
+  <title>Poké Stars</title>
 
-  <body>
-    <h1>Caixa</h1>
+</head>
 
-    <section title="Caixa">
-
-      <div class="main">
-
-        <div class="produto">
-          <div type="text" id="productPrice">Preço: </div>
-          <div id="productPrice2"></div>
-          <div type="text" id="productName"></div>
-
-        </div>
-
-        <section title="Valor Pago">
-          <input type="number" id="pago" placeholder="Valor Pago"></input>
-
-        </section>
-
-        <!-- <div class="productimg">
-          <img src="">
-        </div> -->
-
-        <div class="sections">
-          <div type="text" id="troco">Troco</div>
-
-        </div>
-
-        <form id="form">
-          <input type="number" id="pesquisar" placeholder="Pesquisar Codigo de Barra"></input>
-          <button id="botao" type="button">Pesquisar</button>
-
+<body>
+  <section title="NavBar">
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand">Pokémons</a>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Pesquisar Pokémons" aria-label="Search"
+            id="pesquisar" autocomplete="off">
+          <button class="btn btn-outline-success" id="botao" type="button">Pesquisar</button>
         </form>
-
       </div>
+    </nav>
+  </section>
+
+  <div id="main">
+    <section title="Introdução">
+      <img src="Images/pokebola.svg" id="pokebola">
     </section>
 
-    <script type="text/javascript" src="./scripts/index.js"></script>
+    <section title="Descrição">
+      <p class="description">Site para você aprender é pesquisar sobre os seus Pokémons preferidos.<br>
+        Aqui você ira poder ver qualquer pokémon e tambem adicionar um pokémon, se você quiser.
+      </p>
 
-  </body>
+      <p class="description">Site Desenvolvido apenas para estudos sem fins lucrativos, então se puder me seguir no
+        <a href="https://github.com/Chapadox">GitHub</a>
+        eu ficaria muito agradecido. <br>
+        <span class="span">Espero que goste do site.</span>
+      </p>
+
+    </section>
+  </div>
+  <script type="text/javascript" src="./scripts/index.js"></script>
+
+</body>
+
 </html>

@@ -2,9 +2,8 @@ const url = 'http://localhost:3000/'
 
 // selecting items
 const buttonSearch= document.getElementById('botao')
-const productName = document.getElementById('productName')
-const productPrice = document.getElementById('productPrice2')
 const inputSearch = document.getElementById('pesquisar')
+const dv = document.getElementById('main')
 // 
 
 async function get() {
@@ -15,15 +14,12 @@ async function get() {
 }
 
 function showData(dado) {
-  if (inputSearch.value == dado[0].codigo_bar) {
-    productName.innerHTML = dado[0].nome
-    productPrice.innerHTML = dado[0].preço
+  if (inputSearch.value == dado[0].nome) {
     inputSearch.value = ''
+    main.innerHTML = ''
 
   } else {
-    alert('Codigo de barra não encontrado')
+    alert('Desculpa, Pokémon não encontrado. ')
   }
 }
-
-
 buttonSearch.addEventListener('click', get) 
