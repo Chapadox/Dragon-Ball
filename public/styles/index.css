@@ -1,3 +1,7 @@
+body {
+  overflow-y: hidden;
+}
+
 #pokebola {
   position: relative;
   margin-top: 60px;
@@ -9,8 +13,13 @@
             animation: scale-up-center 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   /* Animação */
 }
-
-
+#grafico {
+  position: relative;
+  left: 500px;
+  top: 400px;
+  width: 300px;
+  height: 300px;
+}
 .description {
   width: 50%;
   font-size: 17px;
@@ -24,7 +33,7 @@
             animation: scale-up-center 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   /* Animação */
  }
-
+ 
  .span{
    color: red;
  }

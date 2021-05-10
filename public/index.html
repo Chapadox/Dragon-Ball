@@ -20,7 +20,17 @@
     crossorigin="anonymous"></script>
   <!-- Bootstrap -->
 
-  <title>Poké Stars</title>
+  <!-- Chart JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"
+    integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg=="
+    crossorigin="anonymous"></script>
+  <!-- Chart JS -->
+
+  <!-- Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+  <!-- Jquery -->
+
+  <title>Dragon Ball</title>
 
 </head>
 
@@ -28,11 +38,11 @@
   <section title="NavBar">
     <nav class="navbar navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand">Pokémons</a>
+        <a class="navbar-brand">Dragon Ball</a>
         <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Pesquisar Pokémons" aria-label="Search"
+          <input class="form-control me-2" type="search" placeholder="Pesquisar personagens" aria-label="Search"
             id="pesquisar" autocomplete="off">
-          <button class="btn btn-outline-success" id="botao" type="button">Pesquisar</button>
+          <button class="btn btn-outline-warning" id="botao" type="button">Pesquisar</button>
         </form>
       </div>
     </nav>
@@ -40,12 +50,13 @@
 
   <div id="main">
     <section title="Introdução">
-      <img src="Images/pokebola.svg" id="pokebola">
+      <img src="Images/p1.png" id="pokebola">
     </section>
 
     <section title="Descrição">
-      <p class="description">Site para você aprender é pesquisar sobre os seus Pokémons preferidos.<br>
-        Aqui você ira poder ver qualquer pokémon e tambem adicionar um pokémon, se você quiser.
+      <p class="description">Site para você aprender é pesquisar sobre os seus personagens do Dragon Ball
+        preferidos.<br>
+        Aqui você ira poder ver a historia do personagem, seu nivel de poder é transformações.
       </p>
 
       <p class="description">Site Desenvolvido apenas para estudos sem fins lucrativos, então se puder me seguir no
@@ -56,6 +67,21 @@
 
     </section>
   </div>
+
+  <!-- New page -->
+    <div id="grafico">
+      <canvas id="line-chart"></canvas>
+    </div>
+
+    <div id="newpage">
+      <img id="img">
+
+
+      <div id="description">
+
+      </div>
+    </div>
+  <!-- New page -->
   <script type="text/javascript" src="./scripts/index.js"></script>
 
 </body>
