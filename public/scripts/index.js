@@ -28,13 +28,8 @@ function search(dado) {
       inputSearch.value = ''
       main.innerHTML = ''
 
-
-
-      // const convertJson = JSON.stringify(dado[i].descrição)
-      // const formatedJson = convertJson.replace('zp', '<br>')
-      // desc.innerHTML = formatedJson
-
       convertDatas(dado[i].descrição)
+
       img.src = dado[i].imagem
     }
   }
@@ -42,8 +37,10 @@ function search(dado) {
 
 function convertDatas(data) {
   const convert = JSON.stringify(data)
-  const formatedJson = convert.replace('zp', '<br>')
-  desc.innerHTML = formatedJson
+  const formatedJson = convert.replace(/<br>/g, '<br>')
+  const finalString = formatedJson.replace(/"/g, " ")
+
+  desc.innerHTML = finalString
 }
 
 

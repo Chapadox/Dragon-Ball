@@ -2,7 +2,8 @@
 	{
 		"nome": "Goku",
 		"tipo": "Sayajin",
-		"descrição": "O saiyajin zp Kakarotto nasceu no ano 737 em Vegeta, e mandado ainda bebê para um planeta com poderes de luta de nível baixo, para que pudesse aniquilar sua população e limpá-lo para uma futura venda. Este planeta acabou sendo a Terra, pois os habitantes desta era vistos como fracos. O pai de Kakarotto é Bardock, um guerreiro que desapareceu durante o genocídio de sua raça, enquanto seus filhos estavam fora do planeta, o que permitiu a Kakarotto e seu irmão Raditz sobreviver ao evento. O destino da mãe de Kakarotto é desconhecido.",
+		"descrição": "O saiyajin Kakarotto nasceu no ano 737 em Vegeta, e mandado ainda bebê para um planeta com poderes de luta de nível baixo <br> para que pudesse aniquilar sua população e limpá-lo para uma futura venda. <br> Este planeta acabou sendo a Terra, pois os habitantes desta era vistos como fracos.",
+		"descriçãopt2": "O pai de Kakarotto é Bardock, um guerreiro que desapareceu durante o genocídio de sua raça,<br> enquanto seus filhos estavam fora do planeta, o que permitiu a Kakarotto e seu irmão Raditz sobreviver ao evento.<br> O destino da mãe de Kakarotto é desconhecido.",
 		"transforms": "Kaioken, Super Saiyajin Falso, Super Saiyajin, Super Saiyajin 2, Super Saiyajin 3, Super Saiyajin 4, Super Saiyajin Deus, Super Saiyajin Azul, Super Saiyajin Azul Kaioken, Instinto Superior Incompleto, Instinto Superior Dominado.",
 		"imagem": "https://i.pinimg.com/originals/9d/97/c4/9d97c46e57f56a11d562af45d4c0994e.jpg"
 	},
