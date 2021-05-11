@@ -14,12 +14,28 @@ body {
             animation: scale-up-center 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   /* Animação */
 }
-#grafico {
+#trasforms {
   position: relative;
-  left: 500px;
+  left: 560px;
+  top: -400px;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#AjustDesign {
+  position: relative;
+  left: 40%;
   top: 400px;
   width: 300px;
   height: 300px;
+}
+
+#mortes{
+  position: relative;
+  left: 750px;
+  top: -453px;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
 }
 .description {
   width: 50%;

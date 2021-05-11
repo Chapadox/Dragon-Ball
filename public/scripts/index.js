@@ -12,6 +12,8 @@ const testediv = document.getElementById('teste')
 const desc = document.getElementById('description')
 const img  = document.getElementById('img')
 const descPt2 = document.getElementById('description-pt2') 
+const divTransfo = document.getElementById('trasforms')
+const divDead = document.getElementById('mortes')
 // 
 
 async function get() {
@@ -19,7 +21,6 @@ async function get() {
   const data = await getUrl.json()
   console.log(data)
   search(data)
-  convert(data)
 }
 
 function search(dado) {
@@ -30,11 +31,12 @@ function search(dado) {
       main.innerHTML = ''
 
       convertDatas(dado[i].descrição, dado[i].descrição_pt2)
-
+      trasforms(dado[i].transforms, dado[i].tecnicas)
       img.src = dado[i].imagem
     }
   }
 }
+
 
 function convertDatas(data, data2) {
 
@@ -48,6 +50,18 @@ function convertDatas(data, data2) {
 
   desc.innerHTML = finalString
   descPt2.innerHTML = finalStringPt2
+}
+
+function trasforms(dado, dado2) {
+  const convertData = JSON.stringify(dado)
+  const replace = convertData.replace(/<br>/g, '<br>')
+
+  const html = '<p><button class="btn btn-success mr-3" type="button" data-toggle="collapse" data-target="#collapseExample"aria-expanded="false" aria-controls="collapseExample">Transformações</button><button class="btn btn-success"type="button" data-toggle="collapse" data-target="#tecnicas" aria-expanded="false" aria-controls="collapseExample">Principais Técnicas</button></p><div class="collapse" id="collapseExample"><div class="card card-body">'+ dado +'</div></div><div class="collapse" id="tecnicas"><div class="card card-body">'+ dado2 +'</div></div></div>'
+  divTransfo.innerHTML = html
+
+
+  // const deadButton = '<p><button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Mortes</button></p><div class="collapse" id="collapseExample"><div class="card card-body">'+ dado2 + '</div></div>'
+  // divDead.innerHTML = deadButton
 }
 
 
