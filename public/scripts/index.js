@@ -10,7 +10,8 @@ const testediv = document.getElementById('teste')
 
 // "New Page"
 const desc = document.getElementById('description')
-const img  = document.getElementById('img') 
+const img  = document.getElementById('img')
+const descPt2 = document.getElementById('description-pt2') 
 // 
 
 async function get() {
@@ -28,19 +29,25 @@ function search(dado) {
       inputSearch.value = ''
       main.innerHTML = ''
 
-      convertDatas(dado[i].descrição)
+      convertDatas(dado[i].descrição, dado[i].descrição_pt2)
 
       img.src = dado[i].imagem
     }
   }
 }
 
-function convertDatas(data) {
+function convertDatas(data, data2) {
+
+  const convertPt2 = JSON.stringify(data2)
+  const formatedJsonPt2 = convertPt2.replace(/<br>/g, '<br>')
+  const finalStringPt2 = formatedJsonPt2.replace(/"/g, " ")
+
   const convert = JSON.stringify(data)
   const formatedJson = convert.replace(/<br>/g, '<br>')
   const finalString = formatedJson.replace(/"/g, " ")
 
   desc.innerHTML = finalString
+  descPt2.innerHTML = finalStringPt2
 }
 
 

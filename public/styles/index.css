@@ -36,21 +36,31 @@ body {
  }
 
 #img {
-  
+  width: 20%;
+  position: relative;
+  top: -200px;
+  left: 50px;
 }
 
 #description{
   position: relative;
   left: 560px;
-  top: -200px;
-  font-size: 18px;
+  top: -500px;
+  font-size: 17px;
   font-family: 'Roboto', sans-serif;
 }
+
+#description-pt2{
+  position: relative;
+  left: 560px;
+  top: -470px;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+}
+
  .span{
    color: red;
  }
-
-
 
 
 
