@@ -18,17 +18,32 @@ async function get() {
   const data = await getUrl.json()
   console.log(data)
   search(data)
+  convert(data)
 }
 
 function search(dado) {
   for (var i = 0; i < dado.length; i++) {
     if (dado[i].nome === inputSearch.value) {
+
       inputSearch.value = ''
       main.innerHTML = ''
-      desc.innerHTML = dado[i].descrição
+
+
+
+      // const convertJson = JSON.stringify(dado[i].descrição)
+      // const formatedJson = convertJson.replace('zp', '<br>')
+      // desc.innerHTML = formatedJson
+
+      convertDatas(dado[i].descrição)
       img.src = dado[i].imagem
     }
   }
+}
+
+function convertDatas(data) {
+  const convert = JSON.stringify(data)
+  const formatedJson = convert.replace('zp', '<br>')
+  desc.innerHTML = formatedJson
 }
 
 

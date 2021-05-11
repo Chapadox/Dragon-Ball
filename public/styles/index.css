@@ -33,7 +33,14 @@ body {
             animation: scale-up-center 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   /* Animação */
  }
- 
+
+#img {
+  
+}
+
+#description{
+  position: relative;
+}
  .span{
    color: red;
  }
