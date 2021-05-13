@@ -30,30 +30,14 @@
 ## Future Work ⚙️
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
+ 
+- [ ] <strong>Alimentar o Banco de Dados com mais Informações.*</strong>
+- [ ] <strong>Deixar o design responsivo para todas as telas.*</strong>
+- [ ] Acresentar mais detalhes visuais ao design.
+- [ ] Hospedar o projeto.
+- [ ] <strong>Migrar o Banco de dados.</strong>
+- [ ] Refatorar para TypeScript.</span>
 
-<div style="background-color: #ff5252 ; width: 10px;height: 0; padding-bottom: 10px;"></div>
-
-<p style="position: relative;left:20px; top:-16px">Muito Importante</p>
-
-<div style="background-color: #4c4cff ; width: 10px;height: 0; padding-bottom: 10px;position:relative; top: -41px; left: 140px"></div>
-
-<p style="position: relative;left:20px; top:-57px; left: 160px">Importante</p>
-
-<div style="background-color: #358873; width: 10px;height: 0; padding-bottom: 10px;position:relative; top: -82px; left: 240px"></div>
-
-<p style="position: relative;top:-98px; left: 260px">Pouco Importante</p>
-
-
-<div style="position:relative;top: -80px">
-<p>Concerteza ainda tenho muito trabalho, abaixo vou deixar uma <strong>Check-List</strong> de tudo que ainda pretendo fazer.</p>
-
-- [ ] <span style="color: #ff5252">Alimentar o Banco de Dados com mais Informações.</span>
-- [ ] <span style="color: #ff5252">Deixar o design responsivo para todas as telas.</span>
-- [ ] <span style="color: #358873">Acresentar mais detalhes visuais ao design.</span>
-- [ ]  <span style="color: #4c4cff">Hospedar o projeto.</span>
-- [ ] <span style="color: #4c4cff">Migrar o Banco de dados.</span>
-- [ ] <span style="color: #358873">Refatorar para TypeScript.</span>
-</div>
 
 ## Photos 📷
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)](#table-of-contents)
