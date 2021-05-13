@@ -1,7 +1,7 @@
 {
-  "name": "interface",
-  "version": "1.0.0",
-  "description": "node js project",
+  "name": "dragon-ball",
+  "version": "1.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",

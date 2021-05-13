@@ -13,55 +13,48 @@ const desc = document.getElementById('description')
 const img  = document.getElementById('img')
 const descPt2 = document.getElementById('description-pt2') 
 const divTransfo = document.getElementById('trasforms')
-const divDead = document.getElementById('mortes')
 // 
 
 async function get() {
-  const getUrl = await fetch('http://localhost:3000')
-  const data = await getUrl.json()
-  console.log(data)
+  const requestApi = await fetch(url)
+  const data = await requestApi.json()
   search(data)
 }
 
-function search(dado) {
-  for (var i = 0; i < dado.length; i++) {
-    if (dado[i].nome === inputSearch.value) {
+function search(data) {
+  for (var i = 0; i < data.length; i++) {
+    if (data[i].nome === inputSearch.value) {
 
       inputSearch.value = ''
       main.innerHTML = ''
 
-      convertDatas(dado[i].descrição, dado[i].descrição_pt2)
-      trasforms(dado[i].transforms, dado[i].tecnicas)
-      img.src = dado[i].imagem
+      convertDatas(data[i].descrição, data[i].descrição_pt2)
+      extraInfo(data[i].transforms, data[i].tecnicas, data[i].nvlPoder)
+      img.src = data[i].imagem
     }
   }
 }
 
 
-function convertDatas(data, data2) {
+function convertDatas(descr, descr2) {
 
-  const convertPt2 = JSON.stringify(data2)
-  const formatedJsonPt2 = convertPt2.replace(/<br>/g, '<br>')
-  const finalStringPt2 = formatedJsonPt2.replace(/"/g, " ")
+  const convert = JSON.stringify(descr)
+  const replace = convert.replace(/<br>/g, '<br>')
+  const finalString = replace.replace(/"/g, " ")
 
-  const convert = JSON.stringify(data)
-  const formatedJson = convert.replace(/<br>/g, '<br>')
-  const finalString = formatedJson.replace(/"/g, " ")
+  const convertDescr2 = JSON.stringify(descr2)
+  const replaceDescr2 = convertDescr2.replace(/<br>/g, '<br>')
+  const finalString2 = replaceDescr2.replace(/"/g, " ")
 
   desc.innerHTML = finalString
-  descPt2.innerHTML = finalStringPt2
+  descPt2.innerHTML = finalString2
 }
 
-function trasforms(dado, dado2) {
-  const convertData = JSON.stringify(dado)
-  const replace = convertData.replace(/<br>/g, '<br>')
+function extraInfo(transformações, tecnicas, nivelDPoder) {
+  const convertData = JSON.stringify(transformações)
 
-  const html = '<p><button class="btn btn-success mr-3" type="button" data-toggle="collapse" data-target="#collapseExample"aria-expanded="false" aria-controls="collapseExample">Transformações</button><button class="btn btn-success"type="button" data-toggle="collapse" data-target="#tecnicas" aria-expanded="false" aria-controls="collapseExample">Principais Técnicas</button></p><div class="collapse" id="collapseExample"><div class="card card-body">'+ dado +'</div></div><div class="collapse" id="tecnicas"><div class="card card-body">'+ dado2 +'</div></div></div>'
+  const html = '<p><button class="btn btn-primary mr-3" type="button" data-toggle="collapse" data-target="#nvlPoder" aria-expanded="false" aria-controls="collapseExample">Nivel De Poder</button><button class="btn btn-primary mr-3" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Transformações</button><button class="btn btn-primary"type="button" data-toggle="collapse" data-target="#tecnicas" aria-expanded="false" aria-controls="collapseExample">Principais Técnicas</button></p><div class="collapse" id="collapseExample"><div class="card card-body">'+ transformações +'</div></div><div class="collapse" id="tecnicas"><div class="card card-body">'+ tecnicas +'</div></div><div class="collapse" id="nvlPoder"><div class="card card-body">'+ `Ultimo registro: ${nivelDPoder}` +'</div></div></div>'
   divTransfo.innerHTML = html
-
-
-  // const deadButton = '<p><button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Mortes</button></p><div class="collapse" id="collapseExample"><div class="card card-body">'+ dado2 + '</div></div>'
-  // divDead.innerHTML = deadButton
 }
 
 

@@ -3,6 +3,7 @@ body {
   overflow-x: hidden;
 }
 
+/* IDS */
 #pokebola {
   position: relative;
   margin-top: 60px;
@@ -30,27 +31,6 @@ body {
   height: 300px;
 }
 
-#mortes{
-  position: relative;
-  left: 750px;
-  top: -453px;
-  font-size: 17px;
-  font-family: 'Roboto', sans-serif;
-}
-.description {
-  width: 50%;
-  font-size: 17px;
-  font-family: 'Roboto', sans-serif;
-  position: relative;
-  left: 520px;
-  top: -200px;
-
-  /* Animação */
-  -webkit-animation: scale-up-center 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-            animation: scale-up-center 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  /* Animação */
- }
-
 #img {
   width: 20%;
   position: relative;
@@ -73,10 +53,29 @@ body {
   font-size: 17px;
   font-family: 'Roboto', sans-serif;
 }
+/* End IDS */
 
+
+/* Class */
  .span{
    color: red;
  }
+
+ .description {
+  width: 50%;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  left: 520px;
+  top: -200px;
+
+  /* Animação */
+  -webkit-animation: scale-up-center 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: scale-up-center 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  /* Animação */
+ }
+ /* End Class */
+
 
 
 
@@ -101,4 +100,4 @@ body {
             transform: scale(1);
   }
 }
-/* Animação */
+/* End Animação */
